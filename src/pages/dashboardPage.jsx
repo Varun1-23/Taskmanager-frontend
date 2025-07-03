@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import api from '../services/api'
 
-function DashboardPage() {
+function dashboardPage() {
 
   const [tasks , setTasks] = useState([])
   const [filterStatus , setFilterStatus] = useState('all')
@@ -168,4 +168,4 @@ function DashboardPage() {
   )
 }
 
-export default DashboardPage
+export default dashboardPage
