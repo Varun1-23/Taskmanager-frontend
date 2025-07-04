@@ -23,7 +23,7 @@ function AdminDashboardPage() {
         try {
             await api.post('/admin/logout', {} , { withCredentials: true})
             toast.success('Log out success')
-            navigate('/admin-login')
+            navigate('/')
         } catch (error) {
             console.error(error);
             toast.error('logout failed')
