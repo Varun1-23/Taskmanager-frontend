@@ -11,6 +11,7 @@ function AdminDashboardPage() {
     const fetchUsers = async () => {
        try {
          const res = await api.get('/admin/users', { withCredentials: true})
+          console.log('✅ Admin users fetched:', res.data.data.users);
          setUsers(res.data.data.users)
      }
        catch (error) {
